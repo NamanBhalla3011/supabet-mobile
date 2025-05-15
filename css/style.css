@@ -182,11 +182,13 @@ div.supa-footer .box a.dis-flex {
   flex-direction: column;
   color: var(--white);
   text-decoration: none;
+  font: 600 12px var(--fontFamily);
 }
 div.supa-footer .box a.dis-flex img {
-  height: 35px;
+  height: 30px;
   padding-bottom: 10px;
   width: auto;
+  
 }
 
 /* NAVIGATION */
