@@ -1,0 +1,255 @@
+@import url(root.css);
+
+body {
+  background-color: var(--darkGrey);
+}
+/* HEADER*/
+div.supa-header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--lightGrey);
+  height: 42px;
+  padding: 0 6px;
+}
+div.supa-header .box {
+  width: 50%;
+  justify-content: flex-start;
+}
+div.supa-header .box:last-child {
+  text-align: right;
+  justify-content: flex-end;
+}
+div.supa-header .box .menu-icon {
+  height: 20px;
+  width: auto;
+}
+
+div.supa-header .box .supa-logo {
+  height: auto;
+  width: 100%;
+  max-width: 140px;
+  margin-left: 10px;
+}
+
+div.supa-header .box .supa-join {
+  height: 30px;
+  width: 71px;
+  background-color: unset;
+  border: 1px solid var(--green);
+  color: var(--green);
+  border-radius: 5px;
+  /* font-size: 11px; */
+  margin-right: 6px;
+  font: var(--fontWeight) 11px var(--fontFamily);
+}
+
+div.supa-header .box .supa-login {
+  height: 30px;
+  width: 71px;
+  background-color: var(--green);
+  border: none;
+  border-radius: 5px;
+  font: var(--fontWeight) 11px var(--fontFamily);
+}
+div.supa-header .box .supa-login img {
+  height: 18px;
+  width: auto;
+  margin-right: 3px;
+}
+div.supa-header .box .supa-login:hover {
+  background-color: var(--lightGreen);
+}
+
+/* BANNER */
+div.supa-banner {
+  padding-top: 42px;
+  height: 192px;
+  width: 100%;
+}
+div.supa-banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* GAME NAVIGATION */
+div.game-navigation {
+  overflow: auto;
+}
+div.game-navigation .box {
+  height: 78px;
+  width: max-content;
+  overflow: auto;
+  padding-right: 6px;
+}
+div.game-navigation .box a {
+  height: 55px;
+  min-width: 90px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--fontFamily);
+  overflow: hidden;
+}
+div.game-navigation .box a.dis-flex {
+  background-color: var(--lightGrey);
+  flex-direction: column;
+  color: var(--white);
+  text-decoration: none;
+  border: 1px solid var(--white);
+  padding: 2px 0;
+  margin-left: 6px;
+}
+div.game-navigation .box a.dis-flex img {
+  width: 25px;
+}
+div.game-navigation .box a img {
+  height: 100%;
+  width: 100%;
+}
+
+/* GAME SEARCH */
+div.game-search {
+  padding: 6px 6px;
+  position: relative;
+}
+div.game-search input[type="search"] {
+  background-color: var(--lightGrey);
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--fontFamily);
+  color: var(--white);
+  border-radius: 5px;
+  border: none;
+}
+div.game-search input::placeholder {
+  color: var(--white);
+}
+div.game-search::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 0;
+  border-radius: 0 5px 5px 0;
+  width: 40px;
+  height: 40px;
+  background: url("../img/icon_search.webp") center center no-repeat transparent;
+  background-size: 20px;
+}
+/* GAME GRID */
+div.game-grid {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 6px;
+  width: calc(100% - 4%);
+  margin: auto;
+}
+
+div.game-grid .game-box {
+  width: 116px;
+  height: 114px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+div.game-grid .game-box img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+
+/* FOOTER */
+div.supa-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--lightGrey);
+  height: 70px;
+  padding: 0 6px;
+  justify-content: space-around;
+}
+div.supa-footer .box {
+  width: 25%;
+}
+div.supa-footer .box a.dis-flex {
+  flex-direction: column;
+  color: var(--white);
+  text-decoration: none;
+}
+div.supa-footer .box a.dis-flex img {
+  height: 35px;
+  padding-bottom: 10px;
+  width: auto;
+}
+
+/* NAVIGATION */
+div.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--darkGrey);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+div.overlay .nav-box {
+  background-color: var(--lightGrey);
+}
+div.overlay > .nav-box:first-child {
+  text-align: center;
+  padding: 11px 5px;
+}
+div.overlay > .nav-box:first-child p {
+  font-size: 15px;
+  font-family: var(--fontFamily);
+  font-weight: var(--fontWeight);
+  color: var(--white);
+}
+div.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  font-size: 30px;
+  color: var(--white);
+  text-decoration: none;
+  line-height: 1.3;
+}
+div.overlay .overlay-content .nav-box a.dis-flex {
+  justify-content: flex-start;
+  padding: 5px;
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--fontFamily);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+div.overlay .overlay-content .nav-box a.dis-flex img {
+  height: 20px;
+  margin-right: 10px;
+}
+#casino .overlay-content .nav-box a.dis-flex img {
+    visibility: hidden;
+}
+#casino .overlay-content .nav-box a.dis-flex{
+padding: 5px 20px;
+justify-content: space-between;
+}
+@media (min-width:545px) {
+    /* BANNER */
+div.supa-banner {
+    height: 300px;
+  }
+  div.supa-banner img {
+    object-fit: fill;
+  }
+}
