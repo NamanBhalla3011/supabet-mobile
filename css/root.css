@@ -2,21 +2,25 @@
 
 :root {
   --lightGrey: #373a43;
+  --disableColor: #aaa;
   --darkGrey: #27292f;
   --black: #000;
   --green: #6dfe8f;
   --lightGreen: #86fea2;
   --white: #fff;
   --yellow: #ffcf40;
+
   --fontFamily: Roboto, sans-serif;
   --fontWeight: 800;
+
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font: var(--fontWeight) var(--fontFamily);
+  font-weight: var(--fontWeight);
+  font-family: var(--fontFamily);
 }
 
 .dis-flex {

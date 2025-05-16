@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- NAVIGATION -->
+    <!--MENU NAVIGATION -->
     <div id="myNav" class="overlay">
         <div class="nav-box">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -18,7 +18,7 @@
         </div>
         <div class="overlay-content">
             <div class="nav-box">
-                <a href="#" class="dis-flex"><img src="img/menu/profile.webp" alt="">
+                <a href="myProfile.html" class="dis-flex"><img src="img/menu/profile.webp" alt="">
                     <p>My Profile</p>
                 </a>
             </div>
@@ -33,12 +33,12 @@
                 </a>
             </div>
             <div class="nav-box">
-                <a href="#" class="dis-flex"><img src="img/menu/transactions.webp" alt="">
+                <a href="transaction.html" class="dis-flex"><img src="img/menu/transactions.webp" alt="">
                     <p>View Transactions</p>
                 </a>
             </div>
             <div class="nav-box">
-                <a href="#" class="dis-flex"><img src="img/menu/password.webp" alt="">
+                <a href="changePassword.html" class="dis-flex"><img src="img/menu/password.webp" alt="">
                     <p>Change Password</p>
                 </a>
             </div>
@@ -57,7 +57,8 @@
         </div>
         <div class="box dis-flex">
             <button class="supa-join">Join Now</button>
-            <button class="supa-login dis-flex"><img src="img/iconLogin.webp" alt="">Login</button>
+            <button class="supa-login dis-flex" onclick="openIFrame()"><img src="img/iconLogin.webp"
+                    alt="">Login</button>
         </div>
     </div>
     <!-- BANNER -->
@@ -187,8 +188,7 @@
             </a>
         </div>
     </div>
-    <!-- Casino Menu -->
-    <!-- NAVIGATION -->
+    <!-- CASINO MENU -->
     <div id="casino" class="overlay">
         <div class="nav-box">
             <a href="javascript:void(0)" class="closebtn" onclick="closeCasino()">&times;</a>
@@ -317,6 +317,11 @@
             </div>
 
         </div>
+    </div>
+    <!-- LOGIN IFRAME -->
+    <div class="iframe-overlay" id="iframeOverlay">
+        <span class="close-btn" onclick="closeIFrame()">×</span>
+        <iframe src="https://supabets.bloop.dev/loginV2?destination=Sport"></iframe>
     </div>
     <script src="js/script.js"></script>
 </body>
