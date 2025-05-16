@@ -10,9 +10,87 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <div class="header-box dis-flex">
         <a href="index.html" class="closebtn">&times;</a>
         <p>Transaction List</p>
+    </div>
+    <!-- FILTERS -->
+    <div class="transaction-filters dis-flex">
+        <div class="date-select dis-flex">
+            <div class="from-date">
+                <label for="from">From</label>
+                <input type="date" id="from" value="2025-05-09">
+            </div>
+            <div class="to-date">
+                <label for="to">To</label>
+                <input type="date" id="to" value="2025-05-16">
+            </div>
+        </div>
+        <select>
+            <option>Search Transaction by Type</option>
+        </select>
+        <div class="checkbox-options dis-flex">
+            <label class="dis-flex">
+                <input type="checkbox" checked>
+                User Account
+            </label>
+
+            <label class="dis-flex">
+                <input type="checkbox" checked>
+                Bonus
+            </label>
+        </div>
+        <button class="btn-continue">Continue</button>
+    </div>
+    <!-- TRANSACTION TABLE -->
+    <div class="trans-table-wrapper">
+        <table class="trans-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Transaction</th>
+                    <th>Betslip</th>
+                    <th class="text-alg-cnt">Amount</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>14/05/2025 09:54:50</td>
+                    <td>Habanero Withdrawal</td>
+                    <td class="red">Bet Slip</td>
+                    <td>0.00</td>
+                    <td>1,090.76</td>
+                </tr>
+                <tr>
+                    <td>14/05/2025 09:54:50</td>
+                    <td>Habanero Deposit</td>
+                    <td class="red">Bet Slip</td>
+                    <td>-3.00</td>
+                    <td>1,090.76</td>
+                </tr>
+                <tr>
+                    <td>13/05/2025 11:48:30</td>
+                    <td>BitvilleEndorphina Win</td>
+                    <td></td>
+                    <td>200.00</td>
+                    <td>1,093.76</td>
+                </tr>
+                <tr>
+                    <td>13/05/2025 11:48:25</td>
+                    <td>BitvilleEndorphina Bet</td>
+                    <td></td>
+                    <td>-10.00</td>
+                    <td>893.76</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- PAGINATION -->
+    <div class="trans-pagination dis-flex">
+        <div><a href="#"> &laquo; </a> <a href="#">&raquo;</a></div>
+        <div>Total Rows: 196</div>
     </div>
 </body>
 
