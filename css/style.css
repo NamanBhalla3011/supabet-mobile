@@ -258,18 +258,20 @@ div.iframe-overlay {
   align-items: center;
   z-index: 1000;
 }
-div.iframe-overlay .iframe-width{
+div.iframe-overlay .iframe-width {
   position: relative;
+  height: 100%;
+  top: 15%;
 }
 /* Iframe styling */
-div.iframe-overlay iframe {
+div.iframe-overlay .iframe-width iframe {
   height: 60%;
   border: none;
   border-radius: 10px;
 }
 
 /* Close button */
-div.iframe-overlay .close-btn {
+div.iframe-overlay .iframe-width .close-btn {
   position: absolute;
   top: 0px;
   right: 10px;
@@ -474,7 +476,7 @@ div.trans-pagination {
   font-size: 13px;
   color: var(--white);
 }
-div.trans-pagination a{
+div.trans-pagination a {
   text-decoration: none;
   color: var(--white);
   margin-right: 15px;
